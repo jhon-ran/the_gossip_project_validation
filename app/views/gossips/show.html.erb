@@ -1,4 +1,4 @@
-<h2>Congratulations your gossip was correctly saved<h2>
+<h2>Your gossip was correctly saved<h2>
 
 <p>
   <strong>Title:</strong>
@@ -10,4 +10,5 @@
   <%= @gossip.text %>
 </p>
 
+<%= link_to 'Edit', edit_gossip_path(@gossip) %> 
 <%= link_to 'Back', welcome_index_path %>
