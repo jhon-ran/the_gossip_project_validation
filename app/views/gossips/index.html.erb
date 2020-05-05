@@ -1,0 +1,16 @@
+<h1>Listing Articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+  <% @gossips.each do |gossip| %>
+    <tr>
+      <td><%= gossip.title %></td>
+      <td><%= gossip.text %></td>
+      <td><%= link_to 'Show', gossip_path(gossip) %></td>
+    </tr>
+  <% end %>
+</table>
