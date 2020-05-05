@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
 
-  
+  # nested comments in articles
+  resources :gossips do
+    resources :comments
+  end
+
 end

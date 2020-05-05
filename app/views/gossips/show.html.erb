@@ -1,4 +1,4 @@
-<h2>Your gossip was correctly saved<h2>
+<h2>Your submission has been saved<h2>
 
 <p>
   <strong>Title:</strong>
@@ -9,6 +9,16 @@
   <strong>Text:</strong>
   <%= @gossip.text %>
 </p>
+
+<!-- For comments -->
+<h2>Comments</h2>
+<%= render @gossip.comments %>
+<!-- For comments -->
+
+<!-- For comments -->
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+<!-- For comments -->
 
 <%= link_to 'Edit', edit_gossip_path(@gossip) %> 
 <%= link_to 'Back', welcome_index_path %>
