@@ -9,3 +9,10 @@
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
+
+<!--Delete a comment -->
+<p>
+  <%= link_to 'Destroy Comment', [comment.gossip, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
